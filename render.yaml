@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: n8n
+    env: docker
+    plan: free
+    autoDeploy: true
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: N8N_HOST
+        value: www.n8n.jangame.org
+      - key: N8N_PORT
+        value: $PORT
+      - key: N8N_ENCRYPTION_KEY
+        value: your_secure_random_string_here
+      - key: WEBHOOK_URL
+        value: https://www.n8n.jangame.org/
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+      - key: N8N_BASIC_AUTH_USER
+        value: admin
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: replace_with_strong_password_here
+      - key: N8N_LOG_LEVEL
+        value: info
