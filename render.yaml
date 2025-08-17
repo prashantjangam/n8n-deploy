@@ -11,7 +11,7 @@ services:
       - key: N8N_PORT
         value: $PORT
       - key: N8N_ENCRYPTION_KEY
-        value: your_secure_random_string_here
+        value: prashantjangam@196083742
       - key: WEBHOOK_URL
         value: https://www.n8n.jangame.org/
       - key: N8N_BASIC_AUTH_ACTIVE
@@ -19,6 +19,6 @@ services:
       - key: N8N_BASIC_AUTH_USER
         value: admin
       - key: N8N_BASIC_AUTH_PASSWORD
-        value: replace_with_strong_password_here
+        value: Darsh@2026
       - key: N8N_LOG_LEVEL
         value: info
